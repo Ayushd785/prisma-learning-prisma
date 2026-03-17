@@ -12,10 +12,22 @@ datasource db {
   provider = "postgresql"
 }
 
-model Product {
-  id          Int      @id @default(autoincrement())
-  name        String
-  description String?  // The ? means this column is optional
-  price       Float
-  createdAt   DateTime @default(now())
+model User{
+  id Int @id @default(autoincrement())
+  name String
+  password String
+  email String @unique
+  todos Todo[]
 }
+
+model Todo{
+  id Int @id @default(autoincrement())
+  title String
+  isCompleted Boolean @default(false)
+  createdAt DateTime @default(now())
+
+  // The relational link 
+  userId   Int 
+  user      User @relation(fields : [userId], references: [id])
+}
+
