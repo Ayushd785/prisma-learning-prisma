@@ -3,6 +3,7 @@ import type {Application} from "express";
 import dotenv from "dotenv";
 dotenv.config();
 import authRoutes from "./routes/authRoutes.js"
+import todoRoutes from "./routes/todoRoutes.js"
 const app : Application = express();
 
 app.use(express.json());
@@ -26,6 +27,6 @@ const startServer = async()=>{
 };
 
 
-app.use("/api/auth", authRoutes)
-
+app.use("/api/auth", authRoutes);
+app.use("/api/todo", todoRoutes);
 startServer();
