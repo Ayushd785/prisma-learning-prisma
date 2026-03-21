@@ -329,7 +329,3 @@ prismalearning/
 | Phase 6: Advanced | ⏳ Pending | 0% |
 
 ---
-
-## License
-
-ISC
