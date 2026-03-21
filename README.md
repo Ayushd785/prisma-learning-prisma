@@ -1,14 +1,31 @@
-# Todo App - Learning Project
+#  Backend + Devops revison Project
 
-A full-stack Todo application built with Express.js, TypeScript, Prisma, and PostgreSQL. This project serves as a learning journey through modern backend development practices.
+A production-grade, fully containerized RESTful API for task management, engineered with Express.js 5, TypeScript, and Prisma ORM backed by PostgreSQL. This project demonstrates end-to-end software engineering best practices — from database design and secure authentication to Docker orchestration, automated CI/CD pipelines with GitHub Actions, comprehensive test coverage, and cloud deployment on AWS infrastructure.
 
 ## Tech Stack
 
+### Backend
 - **Runtime**: Node.js with TypeScript
 - **Framework**: Express.js 5
 - **ORM**: Prisma
 - **Database**: PostgreSQL
 - **Authentication**: JWT + bcrypt
+
+### DevOps & Infrastructure
+- **Containerization**: Docker, Docker Compose
+- **CI/CD**: GitHub Actions, Jenkins
+- **Cloud**: AWS (ECS, ECR, RDS, EC2, Route 53, CloudWatch)
+- **Reverse Proxy**: Nginx
+
+### Testing
+- **Test Framework**: Jest / Vitest
+- **API Testing**: Supertest
+- **Coverage**: NYC / c8
+
+### Code Quality
+- **Linting**: ESLint
+- **Formatting**: Prettier
+- **Validation**: Zod / Joi
 
 ## Current Features
 
