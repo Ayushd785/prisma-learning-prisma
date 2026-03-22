@@ -7,7 +7,7 @@ export const createTodo = async(title: string, userId: number, description: stri
             userId,
             description,
         }
-    })
+    });
 }
 
 export const getTodosByUser = async (userId: number)=>{
@@ -26,5 +26,5 @@ export const toggleTodoCompletion = async (todoId: number, isCompleted: boolean)
 export const deleteTodo  = async(todoId: number)=>{
     return await prisma.todo.delete({
         where:{id: todoId}
-    })
+    });
 }
